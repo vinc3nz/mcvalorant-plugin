@@ -2,6 +2,8 @@
 
 Full Valorant logic in Minecraft!
 
+Development fueled by music by F-777 and Waterflame.
+
 ## NOTE: This plugin is designed for the Minecraft PaperMC server. A FabricMC modloader port will be created if I have time.
 
 Features: *(All WIP as of now)*
