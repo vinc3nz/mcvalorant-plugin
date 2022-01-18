@@ -1,13 +1,8 @@
-
-name: Example Plugin
+name: MCValorant
 version: 0.0.1
 api-version: 1.18
-author: You!
-main: exampleplugin.Main
-description: Hallo!
+author: AV3_08
+main: me.av306.mcvalorant.Main
+description: Full Valorant logic in Minecraft
 
-commands:
-  examplecommand:
-    description: Example command
-    usage: /examplecommand
-    
+commands:    
