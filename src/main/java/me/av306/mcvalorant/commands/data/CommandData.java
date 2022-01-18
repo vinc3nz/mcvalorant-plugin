@@ -1,4 +1,4 @@
-package me.av306.mcvalorant.commands;
+package me.av306.mcvalorant.commands.data;
 
 import org.bukkit.Command;
 import org.bukkit.CommandSender;
