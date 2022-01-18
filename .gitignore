@@ -8,6 +8,7 @@ bin/
 .settings/
 .classpath
 .project
+.breakpoints
 
 # GitHub
 .github/
