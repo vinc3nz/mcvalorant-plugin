@@ -1,7 +1,7 @@
 package me.av306.mcvalorant.commands.data;
 
-import org.bukkit.Command;
-import org.bukkit.CommandSender;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
 
 import java.util.ArrayList;
 
