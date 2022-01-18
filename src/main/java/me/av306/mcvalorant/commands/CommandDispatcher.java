@@ -3,10 +3,13 @@ package me.av306.mcvalorant.commands;
 import static me.av306.mcvalorant.Main.*;
 
 import me.av306.mcvalorant.commands.*;
+import me.av306.commands.data.CommandData;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+
+import java.util.Arrays;
 
 /**
  * MCValorant command dispatcher.
@@ -24,8 +27,14 @@ public class CommandDispatcher implements CommandExecutor
 	@Override
 	public boolean onCommand( CommandSender sender, Command command, String alias, String[] args )
 	{
+		CommandData data = new CommandData( sender, command, alias, Arrays.asList(args).remove(0) );
+		
 		switch ( args[1].toLowerCase() )
 		{
+			case "help":
+				new CommandHelp().run( data );
+				break;
+				
 			case "addplayer":
 				break;
 

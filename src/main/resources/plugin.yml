@@ -6,3 +6,6 @@ main: me.av306.mcvalorant.Main
 description: Full Valorant logic in Minecraft
 
 commands:    
+	mcvalorant:
+		description: Main MCValorant command
+		usage: /mcvalorant <help | subcommand>
