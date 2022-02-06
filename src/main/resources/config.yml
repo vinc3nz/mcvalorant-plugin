@@ -1,0 +1,20 @@
+#███▄ ▄███▓ ▄████▄ ██▒   █▓ ▄▄▄       ██▓     ▒█████   ██▀███   ▄▄▄       ███▄    █ ▄▄▄█████▓
+#▓██▒▀█▀ ██▒▒██▀ ▀█▓██░   █▒▒████▄    ▓██▒    ▒██▒  ██▒▓██ ▒ ██▒▒████▄     ██ ▀█   █ ▓  ██▒ ▓▒
+#▓██    ▓██░▒▓█    ▄▓██  █▒░▒██  ▀█▄  ▒██░    ▒██░  ██▒▓██ ░▄█ ▒▒██  ▀█▄  ▓██  ▀█ ██▒▒ ▓██░ ▒░
+#▒██    ▒██ ▒▓▓▄ ▄██▒▒██ █░░░██▄▄▄▄██ ▒██░    ▒██   ██░▒██▀▀█▄  ░██▄▄▄▄██ ▓██▒  ▐▌██▒░ ▓██▓ ░
+#▒██▒   ░██▒▒ ▓███▀ ░ ▒▀█░   ▓█   ▓██▒░██████▒░ ████▓▒░░██▓ ▒██▒ ▓█   ▓██▒▒██░   ▓██░  ▒██▒ ░
+#░ ▒░   ░  ░░ ░▒ ▒  ░ ░ ▐░   ▒▒   ▓▒█░░ ▒░▓  ░░ ▒░▒░▒░ ░ ▒▓ ░▒▓░ ▒▒   ▓▒█░░ ▒░   ▒ ▒   ▒ ░░
+#░  ░      ░  ░  ▒    ░ ░░    ▒   ▒▒ ░░ ░ ▒  ░  ░ ▒ ▒░   ░▒ ░ ▒░  ▒   ▒▒ ░░ ░░   ░ ▒░    ░
+#░      ░   ░           ░░    ░   ▒     ░ ░   ░ ░ ░ ▒    ░░   ░   ░   ▒      ░   ░ ░   ░
+#░   ░ ░          ░        ░  ░    ░  ░    ░ ░     ░           ░  ░         ░
+#
+#
+#
+general:
+  colorcodes: '&'
+messages:
+  # You can use ColorCodes with '&' (or the custom set character from above) at the beginning
+  # Use %PREFIX% to send the prefix
+  prefix: "&7[&6MCValorant&7]"
+  help: "%PREFIX% &4Change this message in the config.yml file under &7messages.help&4!"
+  subcommand_not_found: "%PREFIX% &4Subcommand not found!"
