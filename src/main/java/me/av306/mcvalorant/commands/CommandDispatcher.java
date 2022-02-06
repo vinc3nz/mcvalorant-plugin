@@ -2,13 +2,15 @@ package me.av306.mcvalorant.commands;
 
 import static me.av306.mcvalorant.Main.*;
 
-import me.av306.mcvalorant.commands.*;
-import me.av306.commands.data.CommandData;
-
+import me.av306.mcvalorant.Main;
+import me.av306.mcvalorant.Tools;
+import me.av306.mcvalorant.commands.data.CommandData;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
+import java.lang.reflect.Method;
 import java.util.Arrays;
 
 /**
@@ -22,14 +24,16 @@ import java.util.Arrays;
  *
  * The limitation of this method is that there is only one command registered.
  */
-public class CommandDispatcher implements CommandExecutor
-{
+public class CommandDispatcher implements CommandExecutor {
 	@Override
 	public boolean onCommand( CommandSender sender, Command command, String alias, String[] args )
 	{
-		CommandData data = new CommandData( sender, command, alias, Arrays.asList(args).remove(0) );
-		
-		switch ( args[1].toLowerCase() )
+		CommandData data = new CommandData( sender, command, alias, args );
+
+		if(args.length <= 0) sender.sendMessage(Tools.format(Main.config.get("messages.help").toString()));
+		if(args.length <= 0) return true;
+
+		switch ( args[0].toLowerCase() )
 		{
 			case "help":
 				new CommandHelp().run( data );
@@ -46,10 +50,14 @@ public class CommandDispatcher implements CommandExecutor
 
 			case "weapons":
 				break;
+			case "example":
+				new CommandExample().run(data);
+				break;
 
 			default:
-				sender.sendMessage( ERROR + "Invalid subcommand!" );
-				return false;
+				sender.sendMessage(Tools.format(Main.config.get("messages.subcommand_not_found").toString()));
+				//new CommandHelp().run( data );
+				return true;
 		}
 
 		return true;

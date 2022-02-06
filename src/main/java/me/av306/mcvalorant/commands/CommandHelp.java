@@ -1,5 +1,7 @@
 package me.av306.mcvalorant.commands;
 
+import me.av306.mcvalorant.Main;
+import me.av306.mcvalorant.Tools;
 import me.av306.mcvalorant.commands.data.CommandData;
 
 /**
@@ -11,6 +13,6 @@ public class CommandHelp
 	
 	public static void run( CommandData data )
 	{
-		
+		data.sender.sendMessage(Tools.format(Main.config.get("messages.help").toString()));
 	}
 }

@@ -16,3 +16,6 @@ bin/
 # IDEs
 .idea/
 .eclipse/
+
+# TestServer
+testserver/
